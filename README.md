@@ -5,8 +5,8 @@ tú, con frases cortas, y ve de un paso en uno. Lo que puedas hacer desde Claude
 exactamente qué tocar y espera a que te diga «hecho». **Nunca** pidas, escribas ni repitas contraseñas, códigos ni llaves.
 
 ## 1. Su sector
-Pregúntale de qué sector es y usa este nombre corto: `trafico` (Gestión de tráfico) o `administracion` (Administración
-y documentación). Si es de otro sector, dile que todavía no hay paquete y que avise a Soporte y Tecnología.
+Pregúntale de qué sector es y usa este nombre corto: `trafico` (Gestión de tráfico), `administracion` (Administración
+y documentación) o `comercial` (Comercial). Si es de otro sector, dile que todavía no hay paquete y que avise a Soporte y Tecnología.
 
 ## 2. Git y GitHub CLI
 Comprueba `git --version` y `gh --version`. Si falta alguno, instálalo tú:
