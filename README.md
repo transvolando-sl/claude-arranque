@@ -16,7 +16,7 @@ winget install --id GitHub.cli -e
 ```
 Avísale de que Windows le pedirá permiso y tiene que aceptarlo. Si después no encuentra los comandos, que cierre y vuelva a abrir Claude.
 
-## 3. Entrar en GitHub (lo hace la persona)
+## 3. Entrar en GitHub (lo hace la persona, no tú)
 Comprueba `gh auth status`. Si no hay sesión, dile:
 1. Abre PowerShell.
 2. Escribe `gh auth login` y elige: GitHub.com › HTTPS › Login with a web browser.
@@ -24,7 +24,7 @@ Comprueba `gh auth status`. Si no hay sesión, dile:
 4. Escribe `gh auth setup-git`.
 Si no tiene cuenta de GitHub o no ha aceptado la invitación de la organización, que avise a Soporte y Tecnología.
 
-## 4. Instalar los paquetes (lo haces tú)
+## 4. Instalar los paquetes (los comandos los ejecutas tú, Claude)
 ```
 claude plugin marketplace add transvolando-sl/claude-comun
 claude plugin marketplace add transvolando-sl/claude-<sector>
