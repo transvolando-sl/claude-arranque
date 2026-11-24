@@ -16,13 +16,28 @@ winget install --id GitHub.cli -e
 ```
 Avísale de que Windows le pedirá permiso y tiene que aceptarlo. Si después no encuentra los comandos, que cierre y vuelva a abrir Claude.
 
-## 3. Entrar en GitHub (lo hace la persona, no tú)
-Comprueba `gh auth status`. Si no hay sesión, dile:
+## 3. Cuenta de GitHub y entrar (lo hace la persona; tú la guías)
+Lo de Transvolando está en GitHub, así que hace falta una cuenta. Pregúntale si ya tiene una.
+
+**3.1 Si no la tiene, guíala para crearla:**
+1. Abre github.com/signup en el navegador.
+2. Pon el **correo de tu puesto** y elige una contraseña (guárdala bien; no me la digas).
+3. Elige un **nombre de usuario** (por ejemplo, tu nombre y apellido juntos).
+4. Resuelve la prueba de «no soy un robot» y escribe el código que te llega al correo.
+Espera a que te diga «hecho».
+
+**3.2 Invitación:** dile que le pase su **nombre de usuario** a Soporte y Tecnología, que la invitarán a la organización
+de Transvolando. Cuando le avisen, que acepte la invitación: en el correo que le llega de GitHub, o en
+github.com/orgs/transvolando-sl/invitation, botón **«Join»**. Espera a que te diga «hecho».
+
+**3.3 Entrar desde el ordenador:** comprueba `gh auth status`. Si no hay sesión, dile:
 1. Abre PowerShell.
 2. Escribe `gh auth login` y elige: GitHub.com › HTTPS › Login with a web browser.
 3. Copia el código que aparece, pégalo en la página que se abre y entra con tu cuenta de GitHub.
 4. Escribe `gh auth setup-git`.
-Si no tiene cuenta de GitHub o no ha aceptado la invitación de la organización, que avise a Soporte y Tecnología.
+
+**3.4 Comprobar:** ejecuta `gh repo view transvolando-sl/claude-comun --json name`. Si da error de acceso, falta la
+invitación o aceptarla: vuelve al 3.2.
 
 ## 4. Instalar los paquetes (los comandos los ejecutas tú, Claude)
 ```
